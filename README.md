@@ -6,7 +6,7 @@ Project about redoing a website and learn to use sass, webpack with javascript u
 
 before using :
 
-rpm run build
+```rpm run build```
 
 Put your API key in the .env file in file root 
 
