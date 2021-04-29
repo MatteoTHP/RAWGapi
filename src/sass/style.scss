@@ -1,0 +1,130 @@
+@import "~bootstrap/scss/bootstrap";
+@font-face {
+  font-family: 'Big Noodles';
+  src: url('../fonts/big_noodle_titling.ttf');
+}
+
+$c-white: rgb(255, 255, 255);
+$c-fushia: #d20a32;
+
+@mixin colorize-container($color) {
+  background-color: $color
+  
+}
+
+@mixin padding($value) {
+  padding-bottom: $value;
+  
+}
+
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+body {
+  color: $c-white;
+  background-color: rgb(59, 59, 59);
+}
+
+.container{ 
+  
+  @include colorize-container(rgb(42, 42, 42));
+}
+
+p {
+  
+  font-family: 'Big Noodles';
+}
+
+.fushia{
+  background: $c-fushia;
+  width: 140px;
+  height: 8px;
+  margin-bottom: 1em;
+}
+footer{
+  
+  @include padding(3em);
+}
+.cardGame {
+  width: 18em;
+  height: 16em;
+  padding: 2px 16px;
+  display: block;
+  
+  margin-bottom: 3em;
+  padding-bottom: 7em;
+}
+.card-group{
+  padding-left: 70px;
+}
+.plat{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left:20px;
+  padding-right:50px;
+  margin-bottom: 1em;
+  margin-left: 5em;
+  background: $c-fushia;
+  border: none;
+  color: $c-white;
+}
+.instyle{
+  margin-left: 50px;
+  margin-right: 45px;
+}
+
+
+a{
+  font-size: 17px;
+  font-weight: bold;
+}
+a:link {
+  color: $c-white;
+  
+}
+
+/* visited link */
+a:visited {
+  color: $c-white;
+}
+
+/* mouse over link */
+a:hover {
+  color: $c-white;
+}
+
+/* selected link */
+a:active {
+  color: $c-white;
+}
+
+.title{
+  color: $c-fushia !important;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 45px;
+}
+
+.more{
+  background: $c-fushia;
+  border: none;
+  color: $c-white;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:40px;
+  padding-right:40px;
+  margin-bottom: 3em;
+}
+
+.card{
+  
+  border: none;
+}
+form {
+  float: right;
+}
