@@ -8,7 +8,9 @@ before using :
 
 ```rpm run build```
 
-Put your API key in the .env file in file root 
+Put your API key in the .env file in file root ! 
+
+enjoy !
 
 
 
